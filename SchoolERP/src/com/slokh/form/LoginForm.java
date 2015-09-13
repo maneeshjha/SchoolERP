@@ -1,7 +1,14 @@
 package com.slokh.form;
 
-public class LoginForm {
+import java.io.Serializable;
+
+import org.hibernate.validator.constraints.NotEmpty;
+
+
+public class LoginForm implements Serializable {
+@NotEmpty(message = "Please enter your Username.")
 private String username;
+@NotEmpty(message = "Please enter your Password.")
 private String password;
 public String getUsername() {
 	return username;

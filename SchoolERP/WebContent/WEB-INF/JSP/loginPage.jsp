@@ -39,9 +39,12 @@
 	  	<form:form class="form-login"  method="post" commandName="loginForm">
 		     		        <h2 class="form-login-heading">sign in now</h2>
 		        <div class="login-wrap">
-		            <form:input path="username" class="form-control" placeholder="User ID" />
+		        	<form:errors path="username"/>
+		            <form:input path="username" cssClass="form-control" placeholder="User ID" />  
 		            <br>
-		            <form:password path="password" class="form-control" placeholder="Password"/>
+		            <form:errors path="password"/>
+		            <form:password path="password" cssClass="form-control" placeholder="Password"/>
+		            
 		            <label class="checkbox">
 		                <span class="pull-right">
 		                    <a data-toggle="modal" href="login.html#myModal"> Forgot Password?</a>
