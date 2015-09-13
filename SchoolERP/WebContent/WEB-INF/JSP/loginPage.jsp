@@ -36,7 +36,7 @@
 
 		  <div id="login-page">
 	  	<div class="container">
-	  	<form:form class="form-login" action="register" method="post" commandName="loginForm">
+	  	<form:form class="form-login"  method="post" commandName="loginForm">
 		     		        <h2 class="form-login-heading">sign in now</h2>
 		        <div class="login-wrap">
 		            <form:input path="username" class="form-control" placeholder="User ID" />

@@ -20,8 +20,6 @@ public class LoginController {
     }
 	@RequestMapping(method = RequestMethod.POST)
     public String getUserInformation(Map<String, Object> model) {
-        LoginForm loginForm	= new LoginForm();
-        model.put("loginForm", loginForm);
-		return "loginPage";
+        		return "dashboard";
     }
 }
